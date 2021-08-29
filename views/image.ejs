@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <script src="/js/ui.js" defer></script>
+        <title><%=title%></title>
+    </head>
+    <body>
+        <br />
+        <a href="/api/images" id="backButton">Back</a>
+        <br />
+        <br />
+        <h3><%=img.name%></h3>
+        <br />
+        <img
+            src="data:<%=img.image.contentType%>;base64,<%=img.image.data.toString('base64')%>"
+            alt="<%=img.name%>"
+        />
+        <br />
+        <h4>Image size: <%= img.sizeInBytes %></h4>
+        <h4>Image type: <%= img.mimetype %></h4>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#uploadForm {
+    margin: 0.5rem;
+}
+
+#select-img,
+#upload-img {
+    padding: 0.5rem;
+}
+
+#showLinksBtn,
+#backButton {
+    text-decoration: none;
+    background-color: #eeeeee;
+    color: #333333;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.imageLink {
+    display: block;
+    margin: 1rem;
+}
